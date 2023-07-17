@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+</head>
+<body>
+    <p>Dando continuidade ao capítulo 16, vamos hoje aprender como e onde utilizar essas caixas.</p>
+    <p>Sendo um pouco mais específico, na aula de hoje aprenderemos a agrupar essas caixas de umaforma mais inteligente para melhor construirmos nossos sites.</p>
+    <p>Antes de tudo, vamos criar o arquivo "caixa02.html". Configure o código base seguindo a aula</p>
+    
+    <h2>DIV E SPAN AGRUPADOS</h2>
+    <p>As tags de agrupamento basicamente sepre foram duas: a <code>&lt;div&gt;</code>, uma caixa do tipo box-level e o <code>&lt;span&gt;</code>.</p>
+    <p>Antigamente, no HTML 4, era muito comum criarmos  sites da seguinte forma:</p>
+    
+    
+    &lt;div&gt;
+        <ul>
+            &lt;div&gt;
+                <ul>
+                    &lt; id="cabecalho"&gt;
+                    <ul>&lt;h1&gt;&lt;/h1&gt;</ul>
+                            
+                            
+                    <ul>&lt;div id="menu"&gt;&lt;/div&gt;</ul>
+                        
+                    &lt;/div&gt;
+                </ul>
+                &lt; id="conteudo"&gt;&lt;/div&gt;
+                <li>&lt; id="rodape"&gt;&lt;/div&gt;</li>
+            &lt;/div&gt;
+        </ul>
+    &lt;/div&gt;
+    
+
+    <h2>AS NOVIDADES DA HTML5 EM CAIXAS</h2>
+    <p>Muitos professores ainda ensinam dessa forma. Ocorre porém que o HTML evoluiu muito e hoje com o HTML5 você pode continuar utilizando a tag <code>&lt;div&gt;</code> pois ele não foi "abolida", somente não se utiliza mais dessa forma. Atualmente existem gouping tags semânticas para construir seu site de uma forma mais semântica, auxiliando os mecanismos de buscas.</p>
+
+    <h2>CABEÇALHO, CONTEÚDO PRINCIPAL E RODAPÉ</h2>
+    <p>Todo site possui um conteúdo principal, antecedido de um cabeçalho e seguido de um rodapé. Iniciaremos com o cabeçalho que será construido agrupando o conteúdo dentro da tag <code>&lt;header&gt;</code> (cuidado para não confundir com a tag <code>&lt;
+    head&gt;</code>. Nosso conteúdo principal será agrupado dentro da tag <code>&lt;main&gt;</code>. Finalmente, nosso rodapé será construido dentro da tag <code>&lt;footer&gt;</code>.</p>
+    <p>Na prática, as três tags que citamos são div's, porém os mecanisos de busca e seu navegador conseguem valorizar mais seu conteúdo principal, em detriento do caeçalho e do rodapé.</p>
+    <p>No cabeçalho podemos, por exemplo, adicionar um título ao site e criar um menu utilizando a tag <code>&lt;nav&gt;</code> e adicionar nossos links. Podemos também no footer escrever "desenvolvido por (nome)".</p>
+    <p>Essa estrutura agora faz muito sentido semântico. Se você nunca desenvolveu um site não terá muito problema em memorizar essa estrutura pois não terá nenhum vício em relação a estrutura principal</p>
+
+    <h2>SECTION, ARTICLE E ASIDE</h2>
+    <p>Dentro do <code>&lt;main&gt;</code> vamos criar nosso conteúdo principal.</p>
+    <p>Podemos criar seções por meio da tag <code>&lt;section&gt;</code> (que identificaremos como "noticias"). Dentro dela podemos criar artigos por meio da tag <code>&lt;article&gt;</code> e, finalmente, podemos criar assuntos periféricos dentro desse artigo por meio da tag <code>&lt;aside&gt;</code> (por exemplo o nome do autor do artigo).</p>
+    <p>Muitos grostam de criar artigos com seções dentro, outros o oposto. Não há nada de errado com isso. Antigmente existiam algumas tags que não poderiam ser colocadas dentro de outras , mas atualmente uma grouping tag pode ser colocada dentro de qualquer outra grouping tag.</p>
+
+    <h2>PREPARANDO A FORMATAÇÃO CSS3</h2>
+    <p>Abrindo a página de nosso exemplo veremos o quão feio está nosso site. Não existe nenhuma cormatação de CSS, mas como nossa esrutura está montada de forma bem clara, ficará muito mais fácil de configuar um estilo.</p>
+    <p>Podemos por exemplo, dizer que noso body terá uma fonte nã serifada, margem de 0px e com uma cor de fundo cinza. Podemos dizer que nosso cabeçalho terá largura de 600px (ou pode deixar ocupar a largura total da janela), uma cor de fundo branca, um padding de 10px e uma margem de 10px. Pdemos colocar um fundo branco em nosso conteúdo principal e com padding e margem de 10px. Nosso rodapé poderá ter cor de fundo preta, fonte de cor branca, centralizado, padding de 1px e margem de 0px.</p>
+    <p>Nosso artigo terá um background color cinza claro com padding de 5px, o "filho" do nosso article terá um background color um pouco mais escuro que o cinza do artigo</p>
+    <p>Nosso meu de navegação terá backgrou com um cinza escuro e padding de 3px, sem nenhuma decoração nos links do menu e com fonte de cor branca e com weight configurado como bold. podemos configurar um hover cmom um text decoration de valor underline e uma margem a direita de 30px.</p>
+
+    <p>Utilizando esse tipo de agrupamento, sua estrutura ficará muio mais fácil de compreender e muito mais facil para configurar um estilo.</p>
+
+    <p>Feito isso, podemos dizer que esse é nosso primeiro site mais estruturado. Outras configurações de estilos serão vistas nas próximas aulas desse capítulo.</p>
+</body>
+</html>

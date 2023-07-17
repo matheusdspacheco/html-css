@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            color: rgb(0, 0, 0);
+            font-weight: regular;
+            font-style: normal;
+            background-image: linear-gradient(45deg, #9D85F2, #04BFBF);
+        }
+
+        h1{
+            font-family: 'Kaushan Script', cursive;
+            font-size: 3em;
+            color: rgb(173, 38, 4);
+        }
+
+        h2{
+            font-family: 'Kaushan Script', cursive;
+            font-size: 2em;
+            color: rgb(58, 38, 0);
+            font-weight: bold;
+            font-style: normal;
+            
+        }
+
+        a{
+            font-weight: bold;
+            color: rgb(173, 38, 4);
+            text-decoration: none;
+        }
+
+        code{
+            color: rgb(209, 0, 0);
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        /* Color Theme Swatches in Hex 
+        .Ilustração-1-hex { color: #9D85F2; }
+        .Ilustração-2-hex { color: #C7BBF2; }
+        .Ilustração-3-hex { color: #5B44F2; }
+        .Ilustração-4-hex { color: #04ADBF; }
+        .Ilustração-5-hex { color: #04BFBF; }
+
+        Color Theme Swatches in RGBA 
+        .Ilustração-1-rgba { color: rgba(156, 133, 242, 1); }
+        .Ilustração-2-rgba { color: rgba(198, 186, 242, 1); }
+        .Ilustração-3-rgba { color: rgba(91, 67, 242, 1); }
+        .Ilustração-4-rgba { color: rgba(3, 172, 191, 1); }
+        .Ilustração-5-rgba { color: rgba(3, 191, 191, 1); }
+
+        Color Theme Swatches in HSLA 
+        .Ilustração-1-hsla { color: hsla(253, 81, 73, 1); }
+        .Ilustração-2-hsla { color: hsla(253, 68, 84, 1); }
+        .Ilustração-3-hsla { color: hsla(247, 87, 60, 1); }
+        .Ilustração-4-hsla { color: hsla(185, 96, 38, 1); }
+        .Ilustração-5-hsla { color: hsla(180, 96, 38, 1); }*/
+
+
+    </style>
+
+    <title>Aula 6</title>
+</head>
+<body>
+
+    
+    <main>
+        <p><a href="aula07-cap14.html"> Aula 7</a></p>
+        
+        <h1>Usando o Google Fonts</h1>
+        <p>Vamos aprender mais sobre a utilização de fontes externas, descobrindo de onde aquele aquele link enorme que importamos para nossa CSS na aula anterior surgiu.</p>
+        <p>Estamos falando do Google Fonts, um repositório gratuito do prório Google.</p>
+        <h2>Criando um Novo Exercício</h2>
+        <p>No Exercício 17 nos utilizamos uma fonte externa para melhor exemplificar o conceito que seria por nós estudado. Vamos agora criar o Exercício 18 onde falaremos sobre famílias de fontes externas. Você pode criar o arquivo "fonte01.html" e criar o famoso lorem, porém por diversão utilizaremos o arquivo atual, juntando as anotações da aula a um exemplo prático.</p>
+        
+        <h2>Acessando o Google Fonts</h2>
+        <p>Utilizando as fontes padrão ficamos muito limitados pois não conseguimos utilizar toas as configurações possíveis de peso e estilo das fontes. Para resolver esses ploblemas existe um site chamado <a href="https://fonts.google.com/">Google Fonts</a>. Nesse repositório temos muitas famílias de fontes disponíveis, entre elas a Work Sans, uma fonte variável e uma das mais complexas existentes.</p>
+        
+        <h2>Filtrando fontes por categoria</h2>
+        <p>Podemos organizar as fontes por categorias e utilizá-las em nosso site. Inicialmente vamos exibir somente a categoria Handwriting para nosso título, selecionando a fonte Kaushan Script.</p>
+        <h2>Usando uma Fonte Escolhida</h2>
+        <p>Você pode realizar o download da fonte, ou pode também não baixar nada. Basicamente você pode clicar em "select" e será aberta uma janela lateral onde serão exibidos nossos códigos de incorporação.</p>
+        <p><code>@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');</code></p>
+        <p>É importante dizer que por ser uma fonte extraida de um repositório por meio de um API é necessário estar conectado a internet para que a mesma seja exibida.</p>
+        <h2>Código de Incorporação da Fonte</h2>
+        <p>Você pode inserir a fonte tanto por meio de um link do HTML quanto por meio das CSS, como feito na aula anterior.</p>
+        <p>Como essa fonte possui apenas o estilo regular, o link da api será pequeno.</p>
+        <h2>Colocando o Código no Arquivo CSS</h2>
+        <p>Copiando o import, iremos adicionar esse código imediatamente abaixo da teg de abertura Style</p>
+        <p><code>Uma dica interessante é que é possível importar todas as fontes que você desejar utilizar por meio de uma única API. Basta você selecionar todas elas no Google Fonts sem remover nenhuma antes de adicionar outras.</code></p>
+        <h2>Escolhendo uma Fonte Mais Completa</h2>
+        <p>Vamos novamente adicionar a fonte Work Sans.</p>
+        <p>Na tela principal você pode digitar no Google Fonts um texto de exemplo para analisar o resultado.</p>
+        
+        <h2>Importando a Segunda Conte</h2>
+        <p>Removendo a fonte anterior, selecione todos os estilos da Work Sans e importe abaixo da Kaushan Script. Se não quiser utilizar todas, selecione apenas as que desejar.</p>
+        <p><code>@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,<br>200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,<br>200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</code></p>
+        <h2>Aplicando a Fonte ao Conteúdo HTML</h2>
+        <p>No google fonts também será exibido uma safe combination para uso no CSS. Altere o estilo no Body e no H1 conforme vimos em aulas anteriores. Em h1 configure um tamanho de 3em.</p>
+        <p>No caso de um h2, configure também a fonte Kaushan.</p>
+        <p>Lembre-se que para cada fonte que você for importar é necessário importar a fonte e que essa API deverá sempre vir antes de qualquer marcador.</p>
+        <h2>Mais Opções do Google Fonts</h2>
+        <p>Existem outras categorias de fontes no Google Fonts, podendo ser classificadas pelo estilo, pelo idioma e pelo número de estilos.</p>
+        <h2>E se a Fonte Não Estiver no Google Fonts</h2>
+        <p>Existem outros sites, mas o Google Fonts é o melhor.</p>
+        <h2> Quantas Fontes Usar em um Site?</h2>
+        <p>Não exagere muito. Normalmente utiliza-se 3 ou 4 famílias de fontes, separando entre "grandes títulos", "destaque" e "texto normal".</p>
+    </main>
+</body>
+</html>

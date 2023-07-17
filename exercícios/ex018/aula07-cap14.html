@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /*@font-face {
+            font-family: 'Love';
+            src: url(fonts/love\ larry\ ttf.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }*/
+
+        @font-face {
+            font-family: 'Serendi';
+            src: url(fonts/serendipity.ttf) format('truetype'), url(fonts/serendipity.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, #9D85F2, #04BFBF);
+            
+        }
+
+        h1{
+            font-family: 'Serendi', Times, serif;
+            font-size: 55px;
+            font-weight: 500;
+            color: rgb(173, 38, 4);
+        }
+
+        h2{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            color: rgb(58, 38, 0);
+            font-size: 2em;
+            font-weight: normal;
+        }
+
+        a{
+            font-weight: bold;
+            color: rgb(173, 38, 4);
+            text-decoration: none;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 25px;
+        }
+    </style>
+
+    <title>Aula 7</title>
+</head>
+<body>
+    <main>
+        <a href="aula06-cap14.html"><p>Aula 6</p></a>
+        <h1>Usando Fontes Externas Baixadas</h1>
+        <p>Conforme ométodo visto na aula anterior podemos adicionar infinitas fostes ao nosso site.Ocorre porém que muitas vezes o cliente precisa de apenas uma fonte e essa fonte não está o google fonts.</p>
+        <h2>Criando um novo exercício</h2>
+        <p>Crie o "fonte02", ou essa página de anotações.</p>
+        <h2>Montando o estilo CSS</h2>
+        <p>Configure seu body com uma fonte não serifada e seu h1 com uma fonte serifada e tamanho de 3em.</p>
+        <h2>Sites para baixar fontes</h2>
+        <p>Muitas vezes o cliente pode não gostar da fonte padrão, pedindo alguma fonte específica ou enviando-lhe um arquivo de fonte.</p>
+        <p>Para realizar o download de fontes você pode acessar sites como o <a href="https://www.dafont.com/pt/" target="_blank">Dafont</a> e <a href="https://befonts.com/" target="_blank">Befonts</a>.</p>
+        <h2>Cuidado com fontes sem acentos</h2>
+        <p>Tome cuidado pois muitas fontes não possuem glifos com acentos. Fontes sem glifos acentuados não funcionam para textos em português.</p>
+        <h2>Baixando uma fonte</h2>
+        <p>Vamos escolher a fonte Love Larry. É uma fonte qua não possui diferença entre letras maiúsculas e minúsculas. Descompactando o arquivo .zip obteremos um arquivo ttf. Muitas fontes fornecem os formatos otf e ttf.</p>
+        <h2>Onde colocar uma fonte externa no site</h2>
+        <p>Vamos agora colar esse arquivo na pasta de nosso exercício.</p>
+        <h2>Criando o seletor font-face</h2>
+        <p>Para que possamos adicionar tal fonte é necessário adicionar a regra, um seletor especial chamado <code>@font-face</code> no exato mesmo local onde adicionariamos a regra <code>@import</code> para carregar as fontes do Google Fonts.</p>
+        <p>Ao adicionarmos tal seletor deverão ser exibidas as propriedades font-family onde digitaremos uma safe combination com o nome da fonte e src onde indicaremos o arquivo da fonte.</p>
+        <p>A escolha entre formato OTF ou TTF vai depender do navegador pois alguns respondem melhor a determinados formatos que outros. No geral você pode colocar os dois.</p>
+        <h2>Configurando a fonte personalizada</h2>
+        <p>Na URL sdo source vamos digitar a seguinte informação:</p>
+        <p><code>url('love larry ttf.ttf') format('')</code>.</p>
+        <h2>Entenda sobre os tipos e formatos de fonte</h2>
+        <p>Dentro do format podemos informar os seguintes formatos:</p>
+        <ul>
+            <li>Opentype</li>
+            <p>OTF</p>
+            <li>Truetype</li>
+            <p>TTF</p>
+            <li>embedded-opentype</li>
+            <p></p>
+            <li>Truetype-aat</li>
+            <p>Apple Advanced Typography</p>
+            <li>SVG</li>
+        </ul>
+        <p>Nesse caso vomos optar por truetype. Caso vá adicionar outros formatos basta adicionar uma vírgula e repetir a estrutura da url indicando o outro formato.</p>
+        
+        <h2>Configurações adicionais ao font-face</h2>
+        <p>Podemos configuar nosso font-weight e font-style como normal pois não há variações nessa fonte.</p>
+        <p>Podemos agora adicionar um nome para essa font-family que não necessariamente precisa ser o mesmo nome da fonte. Na verdade você pode dar o nome que você quiser. Para poupar tempo de digitação vamos apenas chama-la de 'Love'</p>
+        <p>Por fim, configure essa fonte em seu h1.</p>
+        <p>Um bizu é indicar o font-weight como normal para garantir que não ocorrerá uma tentativa de colocar tal fonte em alguma variação, mesmo se tivermos indicado isso no font-face.</p>
+        <h2> Configurando pastas específicas para fontes</h2>
+        <p>É recomendado nunca somente largar a fonte na pasta principal. O ideal é sempre criar uma pasta específica para isso. Criando uma pasta e colocando a fonte lá dentro é necessário utilizar o velho comando Ctrl+Espaço para indicar o caminho da fonte. Lembre-se que agora as áspas não devem ser usadas, a menos que você digite o caminho manualmente ('<code>fonts/love larry ttf.ttf</code>).</p>
+        <h2>Misturando fontes externas e Google Fonts</h2>
+        <p>Se você desejar pode misturar as fontes google e externas, sendo necessário apenas criar e configura um font-face conforme fizemos aqui.</p>
+        <h2>Divirta-se</h2>
+        <p>A fonte utilizada na aula estará agora como um comentário. Para que nossa página fique bonita busque uma outra fonte e misture junto com alguma fonte do google para praticar.</p>
+        <p>As fontes utilizadas serão as seguintes:</p>
+        <ul>
+            <li>Serendipity Font</li>
+            <p>Fonte do Befonts somente para uso pessoal.</p>
+            <li>Work Sans</li>
+            <p>Google Fonts</p>
+        </ul>
+    </main>
+</body>
+</html>

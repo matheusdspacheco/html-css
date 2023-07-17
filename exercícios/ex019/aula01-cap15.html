@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Aulas 1 e 2</title>
+</head>
+<body>
+    <h1>Aula 1</h1>
+    <h2 id='principal'>Usando o ID com CSS</h2>
+    <p>Agora mais do que nunca é importante que você tenha assistido as aulas anteriores. Se surgirem muitas dúvidas, revise.</p>
+    <p>Na aula de hoje vamos estudar sobre seletores personalizados e quando utilizálos.</p>
+    <p>Anteriormente vimos que é possível realizar uma configuração para cada elemento do HTML. Ocorre, porém, que muitas vezes temos dois elementos da mesma classe em HTML mas desejamos que eles tenham formatações diferentes. Isso é possível utilizando o ID.</p>
+    <p>Para exemplificar, vamos utilizar as próprias anotações dessa aula para criar uma página de exemplo.</p>
+
+    <h2>Criando um estilo externo para a página</h2>
+    <p>Diferente dos exemplos criados até então, hoje nosso CSS será externo.</p>
+    <p>Crie a regra <code>charset</code>, em body configure o <code>background color</code> e configure a fonte. Façamos o processo Análogo para o seletores <code>h1</code> e <code>h2</code>.</p>
+
+
+    <h2>Por padrão, todo seletor é genérico</h2>
+    <p>Perceba que configurando o seletor <code>h1</code> todos os respectivos títulos sofreção as alterações. É possível diferenciar de forma semantica, utilizando a hierarquida de títulos mas podemos também realizar isso utilizando inteiramente CSS.</p>
+
+
+    <h2>Identificando componentes HTML com id</h2>
+    <p>Temos nesse momento o título da aula e os tópicos com o mesmo nível de título. Para segregar o título principal podemos digitar dentro da tag de abertura o identificador <code>id='principal'</code>. Apesar de serem a mesma tag, eles estão separados pela ID.</p>
+
+
+    <h2>O uso do símbolo cerquilha #</h2>
+    <p>Nossa atual configuração está aplicada para todos os títulos. Para aplicar uma configuração diferente a nosso título 'principal' deveremos criar um seletor com a identificação precedido pela tag (na verdade isso é opcional) e pela cerquilha, vulgo "jogo da velha", ficando da seguinte forma: <code>h2#principal</code>. Nesse momento, qualquer configuração aplicada nesse seletor será aplicado somente a esse título, além de sobrepor a ele qualquer configuração diferente que esteja no seletor genérico.</p>
+    <p>Qualquer coisa pode ser configurada com esse DI "principal'. Dessa forma é interessante preceder a cerquilha pela tag.</p>
+    <p>Uma dica interessante, até mesmo para adiantar o proximo conteúdo é o seguinte:</p>
+    <ul>
+        <li>Tudo o que em HTML for <code>ID</code>, em CSS será #.</li>
+        <li>TUdo o que em HTML for <code>class</code>, em CSS ser "." (ponto).</li>
+    </ul>
+
+
+    <h2>Personalizando os títulos com id</h2>
+    <p>Vamos agora configurar um background-color em nosso "principal', adicionar um padding e um border-radius</p>
+
+
+    <h2>Cuidado com erros de digitação</h2>
+    <p>Fique sempre muito atento a forma como você escrevel o nome de seu ID.</p>
+
+
+    <h2>Qual é a diferença entre id e class?</h2>
+    <p>Além do ID, existe uma outra classificação chamada <code>class</code>. A diferença entre um e outro será explicada na próxima aula.</p>
+
+    <hr>
+
+    <h1>Aula 2</h1>
+    <h2 id='principal'>As diferenças entre ID e class</h2>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            background-image: linear-gradient(to top, #889C9B, #B2BEBF);
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        /*h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }*/
+    </style>
+
+    <title>Aula 4</title>
+</head>
+<body>
+    <main>
+        <h1>Tamanhos de Fontes e Suas Medidas</h1>
+        <p>Como é algo meio complicado de se discutir, vamos seguir as recomendações da <strong>W3C</strong>.</p>
+        <h2>Usando o font-size</h2>
+        <p>Para isso vamos utilizar como base o exercício criado na aula anterior. Por uma questão de falta de memória no computado resse texto estará também na página onde trabalhamos. Nesse primeiro momento as configurações de &lt;h1&gt; e &lt;h2&gt; são desprezíveis.<br>Existem várias formas de trabalhar-mos com o font-size, existindo as <strong>Medidas Absolutas</strong> e Medidas Relativas.</p>
+        <h2>Medidas absolutas para tamanho</h2>
+        <p>São o Centímetro(<strong>cm</strong>), milimítro(<strong>mm</strong>), polegada(<strong>in</strong>), pixel(<strong>px</strong>), ponto(<strong>pt</strong>) e paica(<strong>pc</strong>).</p>
+        <p>Ponto e paica são medidas da tipografia, mais focada em papéis. Não é recomendado seu uso em telas.</p>
+        <p>Podem ocorrer alguns problemas na hora de representar essas medidas pois muitas vezes o navegador não consegue chegar exatamente em, por exemplo, 1cm pois existem telas de tamanhos diferentes, sendo exibido de maneira diferente em cada uma.</p>
+        <h2>Medidas relativas para tamanho</h2>
+        <p>Podemos listar da seguinte maneira:</p>
+        <ul>
+            <li><strong>em</strong></li>
+            <p>Medida relativa ao tamanho atual da fonte. Relativo ao tamanho da letra M maiúscula da fonte.</p>
+            <li><strong>ex</strong></li>
+            <p>Relativo a altura X de uma fonte.</p>
+            <li><strong>rem</strong></li>
+            <p>Semelhante ao em mas relaticvo ao root (fonte configurada no body)</p>
+            <li><strong>vw</strong></li>
+            <p>View width que é a largura da viewport(tamanho da tela).</p>
+            <li><strong>vh</strong></li>
+            <p>Altura da viewport.</p>
+            <li><strong>%</strong></li>
+            <p>Nada a declarar.</p>
+        </ul>
+        <h2>Usaremos mais a medida “em”</h2>
+        <p>Existem várias outras medidas relativas mas nogeral trabalharemos com EM.</p>
+        <p>Como dito anteriormente, vamos trabalhar conforme as recomendações da <strong>W3C</strong>. O órgão recomenda que utilizemos as medidas de font size o PX e EM. Não use outra medida, independente do que outras pessoas argumentem.</p>
+        <p>Para exemplificar, em body defina o fontsize como 1cm. Uma dica é que não pode haver espaço entre o valor e a unidade de medida. Perceba a ignorância do tamanho.</p>
+        
+        <h2>Experimentando outras medidas</h2>
+        <p>Se for definido como 1in ficará uma ignorância ainda maior pois equivale a 2,54cm.</p>
+        <p></p>
+        <h2>Qual é o tamanho normal de uma fonte na tela</h2>
+        <p>Definindo 16px ficará algo mais agradável, sendo o valor padrão (da maioria dos navegadores) quando não está definido nenhum tamanho.</p>
+        <h2>Diferença entre medidas px e pt</h2>
+        <p>Se definirmos 16pt ficara um pouco maior. O ponto é uma medida tipográfica utilizada para impressão em papel. Se formos definir o tamanho de uma fonte, por exemplo, no Word, a medida utilizada será o ponto. Por esse motivo a <strong>W3C</strong> não recomenda seu uso. É mais adequado utilizar o PX</p>
+        <h2>Relação entre medidas px e em</h2>
+        <p>Geralmente 16px correspondem a 1em, ou seja o tamanho da letra normalmente. Podemos entender como uma "equação" <strong>EM=2.PX</strong>.</p>
+        <p>O REM segue a mesma regra, a única diferênça é que utilizará como base a configuração principal do body.</p>
+        <p>O ideal é ssempre utilizar o EM pois você trabalha com a "porcentagem" do tamanho padrão.</p>
+        <h2>Recomendações oficiais</h2>
+        <p>Use PX e EM, as duas medidas recomendadas oficialmente pela <strong>W3C</strong></p>
+    </main>
+
+</body>
+</html>

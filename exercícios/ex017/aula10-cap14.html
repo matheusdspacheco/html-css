@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: 'DM Sans', sans-serif;
+            color: rgb(29, 0, 32);
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+
+            /*font: normal 16px 'DM Sans', Arial, sans-serif;*/
+
+            text-align: justify;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            text-align: right;
+        }
+
+        p{
+            text-indent: 20px;
+        }
+    </style>
+
+    <title>Aula 10</title>
+</head>
+<body>
+    <h1>Alinhamento de Textos com CSS</h1>
+    <p>Chegamos a última aula desse capítulo e hoje vamos aprender a alinhar textos com CSS.</p>
+    <p>Antes de começarmos é importante citar uma pequena "bagunça". Se você estiver acessando essas anotações por meio da página criado com o VSCode perceberá que apesar de o último exercício criado ser o 18, essas anotações estarão na pasta do exercício 17. Isso se dá para igualar o assunto da aula com a sequência de assuntos no PDF.<br>Caso esteja acessando por meio do arquivo <code>.doc</code>, siga essa orientação para a aula de hoje.</p>
+    <p>Não criaremos o "lorem" para exemplificar. Nosso exemplo será pratico, formatando as anotações aqui contidas.</p>
+    
+    <h2>Tipos de Alinhamento Antigamente</h2>
+    <p>Basicamente esxistem três tipos de alinhamento: a esquerda, ao centro e a direita.</p>
+    <p>Existia antigamente uma tag chamada <abbr title="&lt;center&gt;&lt;/center&gt;">center</abbr>. Apesar de funcionar, se você utilizar o próprio VSCode vai indicar que é uma tag obsoleta</p>
+
+    <h2>Fazendo Alinhamento do Jeito Certo</h2>
+    <p>Se a tag <code>center</code> está obsoleta, como então faremos o alinhamento? Com CSS minha jóia! <br>Nesse momento nossos parágrafos, assim como todos os demais textos por padrão, estão totalmente alinhados a esquerda.</p>
+    <p>Parágrafos geralmente possui um alinhamento justificado. Para "justificar" o alinhamento de nossos parágrafos, dentro do seletor <code>body</code> onde você cartamente já dever ter realizado algumas configurações das fontes, vamos digitar a propriedade <code>text-align: justify;</code>. Em títulos isso não é tão perceptível, porém veja que os parágrafos que antes estaam alinhados a esquerda e com espaços variiados a direita agora está totalmente alinhado dos dois lados. É possivel também perceber um maior espaço entre as palavras nos parágrafos.</p>
+    <p>Você pode fazer com que seu título <code>h1</code> fique centralizado, subistituindo <code>justify</code> por <code>center</code>. Mesmo que em <code>body</code> esteja configurado um valor diferente, se você criar um seletor para o <code>h1</code> depois do primeiro seletor, esse último é o que será considerado para o estilo. Podemos alinhar o <code>h2</code> a direita.</p>
+    <p>Importante citar que esses alinhamentos funcionam independente do tamanho da tela.</p>
+    
+
+    <h2>Recuo de Parágrafo (text-indent)</h2>
+    <p>Algo que não foi citado no material é a propriedade <code>text-indent</code>. Análogo a escrita de uma redação, essa propriedade criará uma indentação e nosso texto. Aplicado ao nosso parágrafo, se desejar, você pode criar essa identação indicando o espaçamento com algum valo em pixels. Como exemplo utilizaremos o valor de 20px.</p>
+    <p>O conceito de alinhamento em CSS é muito importante para separa semântica de estilo. Como o posicionamento de um texto não tem é semântico, não faz sentido utilizar uma tag HTML para isso.</p>
+
+    <h2>Dá pra Personalizar Ainda Mais os Seletores</h2>
+    <p>Pode ocorrer o desejo de posicionar, por exemplo, títulos <code>h2</code> em lados diferentes da tela. Isso é possível de ser feito, porém é um processo um pouco mais complexo, sendo necessário estudar sobre identificadores e classes. Isso é o asunto para o próximo capítulo.</p>
+
+</body>
+</html>

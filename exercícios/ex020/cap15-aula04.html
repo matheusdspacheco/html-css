@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: 'Asap', sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        h1{
+            font-family: 'DM Sans', sans-serif;
+            text-align: center;
+        }
+
+        h2{
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        h3{
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        #example-button{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1em;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        #example{
+            background-color: #F20530;
+            width: 150px;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        
+
+        #example:hover{
+            background-color: #f0667f;
+        }
+
+        code{
+            font-size: 16px;
+            font-weight: bold;
+            color: navy;
+        }
+    </style>
+    <title>Aula 4</title>
+</head>
+<body>
+    <a id="example-button" href="links.html"><p id="example">ACESSAR EXEMPLO</p></a>
+
+    <h1>Pseudo-elementos em CSS</h1>
+    <p>Ainda discutindo o assunto da aula anterior, vamos hoje estudar os pseudo-elementos.</p>
+
+    <h2>Criando um novo exercício</h2>
+    <p>Nosso exemplo de hoje não será no mesmo arquivo das anotções. No botão "Acessar Exemplo" você poderá acessar um arquivo chamado "links.html".</p>
+    
+
+    <h2>Criando uma lista com links</h2>
+    <p>Nosso objetivo é personalizar três links: um para o repositório do GitHub, um para o canal do Youtube e um para o site do Curso em Vídeo.</p>
+    <p>Por padrão, links que já foram acessados possuem cor roxa, já os que anda não foram visitados possuem coloração azul.</p>
+
+    <h2>Criando os estilos</h2>
+    <p>Criada a lista, vamos criar nossos estilos.</p>
+    <p>Inicialmente altere a <code>font-family</code> do body para uma fonte não serifada. De maneira mais específica para os link altere a cor para vermelho (alterando dessa forma para sites visitados e não visitados). Tire o sublinhado dos links com <code>text-decoration: none;</code>. Finalize deixando os links em negrito.</p>
+    <p>Para configurar o comportamento dos links acessados, digite <code>a:visited</code> e configure a cor ara um vermelho escuro.</p>
+    <p>Vamos também utilizar a pseudo-classe <code>hover</code> para sublinhar um link quando o mouse estiver posicionado em cima dele com <code>text-decoration: underline;</code> e de cor preta.</p>
+ 
+    <h2>Pseudo-classe active</h2>
+    <p>Essa psuedo classe é muito interessante poisé por meio dela que configuraremos  comprtamento de um elemento no exato mometo em que estivermos clicando nele. Quando deixarmos de clicar ele retornará ao estado anterior. Para exempliicar configure tal estado para que tenha uma cor amarela.</p>
+
+    <h2>Pseudo-elementos</h2>
+    <p>Os pseudo-elementos podem agir em classes, elementos e ids. Em suma, eles mexe no conteúdo periférico do elemento. Todo pseudo elemento é antecedido de (::).</p>
+    <p>Para exemplificar poemos indicar ao final de cada link que aquilo é um link. Para isso vamos utilizar o pseudo eleento <code>after</code>, seguido da propriedade <code>content: link;</code>, sendo possível configurar um esilo diferente para essa informação.</p>
+    <p>Como podemos ver, é possível adicionar coisas nas regiões periféricas de algum elemento sem alterar nada no HTML.</p>
+    
+    
+    <h2>Adicionando conteúdos extras</h2>
+    <p>Se você procurar por "Símbolor HTML5" e acessar um site chamado <a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/">erikasarti</a> poderá personalizar ainda mais adicionando símbolos no lugar do texto "link". para adicionar ao início do elemento utilize o pseudo elemento <code>before</code>.
+    </p>
+
+    <h2>Links especiais com formatação por classe</h2>
+    <p>Se, por exemplo, você desejar indicar que o mais importante é o link para o canal no Youtube você pode criar uma classe com nome "especial" e repetir os dois pseudo elementos utilizados anteriormente, configurando també outras formatações diferenciadas</p>
+
+    <h2>Uma breve revisão</h2>
+    <h3>Seletores Personalizados</h3>
+    <ul>
+        <li># = id</li>
+        <li>. = class</li>
+        <li>: = pseudo-classe</li>
+        <li>:: = pseudo-elemento</li>
+        <li>&gt; = child</li>
+    </ul>
+
+</body>
+</html

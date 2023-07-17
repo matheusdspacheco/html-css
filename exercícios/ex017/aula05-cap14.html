@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: ;
+            font-style: ;
+            }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        h1{
+            /*font-family: 'Work Sans', sans-serif;
+            font-weight: 900;
+            font-size: 3em;
+            font-style: italic;*/
+
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'work sans';
+        }
+    </style>
+
+    <title>Aula 5</title>
+</head>
+<body>
+    <h1>Peso, estilo e shorthand font</h1>
+    <p>Hoje veremos mais algumas declarações sobre fontes.</p>
+    <p>Nessa aula veremos mais algumas propriedades utilizando fontes como PESO e ESTILO.</p>
+    <p>Peso é quando deixamos a fonte mais "magra" ou mais "gorda". Podemos também chamar isso de Light e Bold. Isso foi visto na aula sobre famílias tipográficas.</p>
+
+    <h2>Peso da Fonte</h2>
+    <p>Para ver o peso da fonte não podemos utilizar fontes símples pois elas são extremas: ou é muito fina ou é muito grossa.</p>
+    <p>Na primeira aulanós vimos um exemplo de fonte com os dois extremos e algumas intermediárias. Para criar esse efeito precisaremos utilizar uma fonte chamada WORK SANS. Como ela não está instalada em nenhum computador na face da terra, para utilizá-la é necessário adicionar mais uma lina no style, antes de qualquer configuração. Você poderá encontrar essa linha nó código fonte dessa página, porém não deve se preocupar ainda com ela pois a origem dessa informação será estudada na próxima aula.</p>
+    
+    <h2>Uso do Font-Weight</h2>
+    <p>O peso da fonte é font-weight. Existem alguns pesos literais, sendo eles lighter, normal, bold e bolder. Podemos exemplificar na lista abaixo:</p>
+    <ul>
+        <li style="font-family: 'work sans'; font-weight: lighter;">Lighter</li>
+
+        <li style="font-family: 'work sans'; font-weight: normal;">Normal</li>
+        
+        <li style="font-family: 'work sans'; font-weight: bold;">Bold</li>
+        
+        <li style="font-family: 'work sans'; font-weight: bolder;">Bolder</li>       
+    </ul>
+
+    <h2>Peso com Variações Numéricas</h2>
+    <p>Podemos também definir o peso a partir de números, iniciando no 100 e finalizando em 900. A maioria das fontes não possuem todas as variações sendo muito importante pesquisar bem para garantir essas variações. Nas que possuem, utilizando essa opção você consegue uma nuânce maior.</p>
+    <ul>
+        <li style="font-family: 'work sans'; font-weight: lighter;">Exemplo de Lighter</li>
+
+        <li style="font-family: 'work sans'; font-weight: 200;">Exemplo 200</li>
+
+        <li style="font-family: 'work sans'; font-weight: 300;">Exemplo 300</li>
+
+        <li style="font-family: 'work sans'; font-weight: 400;">Exemplo 400</li>
+
+        <li style="font-family: 'work sans'; font-weight: 500;">Exemplo 500</li>
+
+        <li style="font-family: 'work sans'; font-weight: 600;">Exemplo 600</li>
+
+        <li style="font-family: 'work sans'; font-weight: 700;">Exemplo 700</li>
+
+        <li style="font-family: 'work sans'; font-weight: 800;">Exemplo 800</li>
+
+        <li style="font-family: 'work sans'; font-weight: 900;">Exemplo 900</li>
+    </ul>
+
+    <h2>Uso do Font-Style</h2>
+    <p>Outra coisa que não existe emtodas as fontes é a diferênça ente itálico e normal. Para poder utilizar de maneira mais adequada é necessário que a fonte escolhida possua essas duas características em todos os pesos.</p>
+    <ul>
+        <li style="font-family: 'work sans'; font-weight: 200; font-style: normal;">Exemplo 200</li>
+        <li style="font-family: 'work sans'; font-weight: 200; font-style: italic;">Exemplo 200 italico</li>
+
+        <li style="font-family: 'work sans'; font-weight: 900; font-style: normal;">Exemplo 900</li>
+        <li style="font-family: 'work sans'; font-weight: 900; font-style: italic;">Exemplo 900 italico</li>
+    </ul>
+    <p>Antigamente esses sois processos eram feitos utilizando as tags &lt;b&gt; e &lt;i&gt; em HTML. Atualmente você fará totalmente pelo CSS com <code>font-weight</code> e <code>font-style</code>.</p>
+
+    <h2>Uso to text-decorarion</h2>
+    <p>Para os fans do sublinhado, simplesmente digite <code>text-decoration: underline</code>.</p>
+    <p style="text-decoration: underline;">Fazendo isso, esse será o resultado.</p>
+
+    <h2>Configuração de Exemplo</h2>
+    <p>Configurando nosso h1, de todas as configurações possíveis a mais comum contém <code>font-family, font-size, font-weight e font-style</code>.</p>
+
+    <h2>Simplificando tudo com shorthand Font</h2>
+    <p>É possível condensar as quatro declarções citadas no que é chamado de shorthand font.</p>
+    <p>Antes de mostrar como fazer é importante dizer que temos que seguir a seginte ordem: <code>font-style</code> -> f<code>ont-weight</code> -> <font-sizecode></font-sizecode>
+    <p>Finalmente, declararemos da seguinte maneira: <code>font: italic bolder 3em 'work sans', sans-serif;</code>, simplificando em uma única linha. Importante dizer que nã é possível utilizar um shorthand para tudo.</p>
+    
+    <h2>Um Outro Exemplo de Simplificação</h2>
+    <p>Utilizando o h2 para exemplificar, podemos não configurar como italico, declarar como bold, com tamanho 2em e utilizando apenas a 'Work Sans'.</p>
+</body>
+</html>

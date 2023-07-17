@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #F2F0F2;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        #aula{
+            font-family: 'Dosis', sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+            font-style: normal;
+            text-align: left;
+            height: 20px;
+            width: 39px;
+            padding: 3px;
+            border-radius: 3px;
+            color: white;
+            background-color: #F20530;
+        }
+
+        h1{
+            font-family: 'Dosis', sans-serif;
+            font-size: 2em;
+            font-weight: 600;
+            color: #284030;
+            font-style: normal;
+            text-align: center;
+        }
+
+        h2{
+            font-family: 'Dosis', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            color: #284030;
+        }
+
+        div{
+            color: #ffffff;
+            font-weight: 600;
+            background-color: #748C4F;
+            text-align: center;
+        }
+
+        .segundo-exemplo{
+            background-color: #748C4F;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        .terceiro-exemplo{
+            display: inline-block;
+            background-color: #748C4F;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        .quarto-exemplo{
+            display: inline-block;
+            background-color: #748C4F;
+            border: 1px solid #284030;
+            border-radius: 10px;
+            height: 100px;
+            width: 100px;
+        }
+
+        div:hover{
+            background-color: #284030;
+        }
+        a{
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #F20530;
+            padding: 3px;
+            border-radius: 6px;
+        }
+
+        a:hover{
+            background-color: #f0667f;
+        }
+
+    </style>
+    <title>Aula 3</title>
+</head>
+<body>
+    <p id="aula">Aula 3</p>
+    <h1>Pseudo-classes em CSS</h1>
+    <h2 class="subtitle"></h2>
+    <p>Nessa aula estudaremos as pseudo-classes, aprendendo tambem a configurar os seletores para elas.</p>
+    <p></p>
+
+    <h2>Criando um novo exercício</h2>
+    <p>Siga a aula.</p>
+
+    <h2>Criando algumas DIV</h2>
+    <p>Na próxima aula estudaremos mais sobre DIV, DIV semântia e as configurações delas, porém vamos aqui dar uma pequena introdução para fazermosum exercício básico.</p>
+    <p>Uma DIV éum "espaço qualquer". Abaixo encontraremos um exemplo de DIV.</p>
+
+    <hr>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <hr>
+    
+    <h2>Personalizando as DIV</h2>
+    <p>Colorindo essas DIV's podeos ver qu e ela é  espaço qualquer que, por padrão, ocupa horizontalmente toda a extensão do documento.</p>
+    <p>Aline o texto e agora configure um tamanho de 200px (height) por 200px (width)</p>
+
+    <hr>
+    <div class="segundo-exemplo">01</div>
+    <div class="segundo-exemplo">02</div>
+    <div class="segundo-exemplo">03</div>
+    <hr>
+
+    <p>Nesse momento ficamos com três quadrados de 200px por 200px. Adicione uma borda somente para melhor identificá-los.</p>
+
+    <h2>Usando alinhamento de bloco em linha</h2>
+    <p>Se você quiser que essas DIV's fiquem uma ao lado da outra existem diversas formas de fazer isso. Futuramente faremos isso usando Flex Box mas nesse momento utilizaremos apenas um <code>display: inline-block;</code>.</p>
+
+    <hr>
+    <div class="terceiro-exemplo">01</div>
+    <div class="terceiro-exemplo">02</div>
+    <div class="terceiro-exemplo">03</div>
+    <hr>
+
+    <p>Podemos agora criar IDs para cada uma delas, respectivamente d1, d2 e d3. Não faça ainda nenhuma configuração.</p>
+
+    <h2>O que são pseudo-classes</h2>
+    <p>Você aprendeu que para criar-mos seletores de IDs utilizamos (#) e para seletores de classes utilizamos (.). Para seletores de pseudo-classes utilizaremos (:).</p>
+    <p>As pseudo classes devem estar relacionadas a um elemento ou uma classe, sendo relacionados ao estado de um elemento.</p>
+
+    <h2>Usando a pseudo-classe hover</h2>
+    <p>Existe uma pseudo-classe chamada <abbr title="O seletor deverá ser escrito da forma div:hover quando aplicado a uma DIV"><code>hover</code></abbr>, uma pseudo classe de vários elementos e significa que quando o mouse for posicionado em cima do elemento ele apresentará um comportamento diferente. No exemplo abaixo, quando posicionarmos o mouse o bloco deverá ficar amarelo (o outra cor, considerando que eu modifiquei o CSS).</p>
+
+    <hr>
+    <div id="d1" class="quarto-exemplo">01</div>
+    <div id="d2" class="quarto-exemplo">02</div>
+    <div id="d3" class="quarto-exemplo">03</div>
+    <hr>
+
+    <p>Claro que isso não muda a funcionalidade, continundo como apenas uma questão estética.</p>
+    <p>Se você estiver bem atento vai perceber que esse <code>hover</code> afetou todos os exemplos anteriores. Veremos a solução para isso futuramente.</p>
+    <p>O <code>hover</code> também pode sera aplicado a outros elementos como podemos ver no "novo exemplo" abaixo.</p>
+
+    <h2>Criando mais um exemplo</h2>
+    <p>Seguindo o material, podemos criar um <a href="hover.html">novo exemplo</a>. Esse exemplo será composto inicilmente de um título <code>h1</code>, um parágrafo e uma div com a seguinte frase dentro dela: <abbr title="propositalmente da forma <div>passe o mouse aqui</div>">"passe o mouse aqui"</abbr>.</p>
+
+    <h2>Criando o estilo com pseudo-classe</h2>
+    <p>Vamos criar um pequeno estilo para nosso body e cria um <code>div:hover</code> para mudar a cor da letra. Quando passamos o mouse sua cor irá mudar.</p>
+
+    <h2>Escondendo um elemento da página</h2>
+    <p>Como nós gostamos de mistério, não queremos apenas mudar a cor do texto, queremos também exibir um texto que esta oculto.</p>
+    
+    <h2>Revelando um elemento escondido</h2>
+    <p>Revelando um parágrafo, podemos criar o seletor <abbr title="Que quer dizer: 'um parágrafo filho de uma div'. Essa repressentação (>) é também chamada de 'child'."><code>div > p</code></abbr> para modificar somete o parágrafo que estiver dentro de uma div e adicionar a propriedade <code>display: none;</code> para ocultar tal parágrafo. Em seguida, crie o seletor <abbr title="que novamente ira modificar somente o parágrafo que estiver dentro de uma div"><code>div:hover > p</code></abbr> oe adicione a propriedade <code>display:block</code> para exibir o texto. Por diversão configure também uma cor diferente para exibição, um background color e um width de 30px.</p>
+    <p>No material em PDF teremos outras pseudo-classes para estudarmos.</p>
+
+</body>
+</html>

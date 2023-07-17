@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /*
+        #F2668B
+        #025E73
+        #011F26
+        #026873
+        #03A688
+        */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: 'Asap', sans-serif;
+            font-weight: normal;
+            font-size: 1em;
+            text-align: justify;
+        }
+
+        h1{
+            font-family: 'Dosis', serif;
+            color: #03A688;
+            font-weight: 600;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h2{
+            font-family: 'Dosis', serif;
+            color: #011F26;
+            font-weight: 600;
+            font-size: 1em;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        h3{
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+
+        h4{
+            font-family: 'Dosis', serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+
+        .subtitle{
+            font-weight: 300;
+            color: #03A688;
+            font-size: 20px;
+            text-align: center;   
+            margin-top: 0px;
+            margin-bottom: 0px;         
+        }
+
+        a{
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            background-color: #025E73;
+            padding: 3px;
+            border: 1px solid rgb(158, 158, 158);
+            border-radius: 3px;
+            transition: 120ms;
+        }
+
+        a:hover{
+            color: #011F26;
+            background-color: #03A688;
+        }
+
+        .title{
+            color: #03A688;
+            background-color: #011F26;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        header{
+            color: #011F26;
+            background-color: #03A688;
+        }
+
+        .dark-box{
+            background-color: #03A688;
+        }
+        
+        .button-1{
+            margin: 15px;
+        }
+
+    </style>
+    <title>Aula 3</title>
+</head>
+<body>
+    <header>
+        <h3>Aulas</h3>
+    </header>
+    
+    <div class="title">
+        <h1>MODELO DE CAIXAS: PRIMEIROS PASSOS</h1>
+        <h2 class="subtitle">BOX MODEL</h2>
+        
+    </div>
+    
+    <a href="caixa01.html" class="button-1">MODELO DE CAIXAS</a>
+        
+    <p>Vamos começar estudando duas medidas que faltaram na aula anterior.</p>
+    <p></p>
+
+    <h2>ENTENDENDO A POSIÇÃO DAS MARGENS</h2>
+    <p>A primeira dessas medidas é a margem. Configurada por meio da propriedade <code>margin</code>, configurada de forma análoga, ela se encontra da borda para fora.</p>
+         
+    <h2>CONFIGURANDO A MARGEM DINAMICAMENTE</h2>
+    <p>Você também pode testar a alteração de tamanho da marem ppor meio do DevTools.</p>
+
+    <h2>CENTALIZANDO COM MARGENS AUTOMÁTICAS</h2>
+    <p>Você pode realizar a centralização de um elemento utilizando as margens. Claro que você não fará isso estabelecendo manualmente um valor pois, dependendo do tamanho da tela do usuário, o elemento pode acabar ficando descentralizado.</p>
+    <p>O meio é calculado a apartir do tamanho da caixa. Por isso, há uma forma muito simples de centralizar uma caixa utilizado a propriedade <code>margin: auto;</code>. Dessa forma,o elemento será centralizado automaticamente no sentido horizontal.</p>
+    <p>É muito prático centralizar dessa forma, apesar de ser contra intuitivo. É interessante que seja utilizado apenas em caixas. Caso deseje centralizar um texto basta utilizar um <code>text-align</code>.</p>
+
+    <h2>ENTENDENDO O OUTLINE</h2>
+    <p>O outline fica entrea borda e a margem, esntando ainda dentro da margem. Fazemos isso de forma análoga a borda. Faça, como exemplo, criando um tracejado do lado. Podemos, dessa forma, adicionar dois pontilhados seguidos.</p>
+    <p>Por estar dentro da margem, não há no DevTools uma indicação específica sobre ele.</p>
+
+    <h2>USANDO SHORTHANDS PARA PROPRIEDADES</h2>
+    <p>Podemos simplificar borda, padding, margem e outline.</p>
+
+    <h4>BORDER</h4>
+    <p>Como as propriedades mais comuns são width, style e color, podemos digitar a seguinte propriedade:</p>
+    <code>border: 10px solid darkslategray;</code>
+    <p>Lembre-se de sempres seguir essa ordem pois ela está de acordo com a ordem das propriedades vistas anteriormente.</p>
+    
+    <h4>PADDING</h4>
+    <p>Para o padding é análogo, sempre seguindo a ordem top, right, bottom e left.</p>
+    <code>padding: 10px 10px 10px 10px;</code>
+
+    <h4>Margem</h4>
+    <p></p>
+    <code>margin: 20px 20px 40px 20px;</code>
+    <p></p>
+
+    <h4>Outline</h4>
+    <code>outline: 5px dashed red;</code>
+
+    <h2>SIMPLIFICANDO SHORTHANDS DE MEDIDAS IGUAIS</h2>
+    <p>Em casos como o padding onte temos quatro valores iguais, basta escrever o valor apenas uma vez.</p>
+    <code>padding: 10px 10px 10px 10px;</code>
+
+    <h2>SIMPLIFICANDO COM DUAS MEDIDAS</h2>
+    <p>Quando utilizamos apenas duas medidas, o primeiro valor é aplicado verticalmente e o segundo é aplicado horizontalmente</p>
+
+    <h2>CENTRALIZANDO COM SHORTHAND</h2>
+    <p>Exmplificando com o margin, podemos escrever o seguinte:</p>
+    <code>margin: 20px auto 40px auto;</code>
+
+    <h2>PERSONALIZANDO O FORMATO DA CAIXA</h2>
+    <p>No DevTools, na seção filter, podemos verificar o tipo de display, alternando entre block, inline-level e flex.</p>
+</body>
+</html>

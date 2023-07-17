@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /*
+        #F2668B
+        #025E73
+        #011F26
+        #026873
+        #03A688
+        */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: 'Asap', sans-serif;
+            font-weight: normal;
+            font-size: 1em;
+            text-align: justify;
+        }
+
+        h1{
+            font-family: 'Dosis', serif;
+            color: #03A688;
+            font-weight: 600;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h2{
+            font-family: 'Dosis', serif;
+            color: #011F26;
+            font-weight: 600;
+            font-size: 1em;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        h3{
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+
+        p{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+
+        .subtitle{
+            font-weight: 300;
+            color: #03A688;
+            font-size: 20px;
+            text-align: center;   
+            margin-top: 0px;
+            margin-bottom: 0px;         
+        }
+
+        a{
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            background-color: #025E73;
+            padding: 3px;
+            border: 1px solid rgb(158, 158, 158);
+            border-radius: 3px;
+            transition: 120ms;
+        }
+
+        a:hover{
+            color: #011F26;
+            background-color: #03A688;
+        }
+
+        .title{
+            color: #03A688;
+            background-color: #011F26;
+            padding: 10px;
+        }
+
+        header{
+            color: #011F26;
+            background-color: #03A688;
+        }
+
+        .dark-box{
+            background-color: #03A688;
+        }
+
+
+    </style>
+    <title>Aula 1</title>
+</head>
+<body>
+    <header>
+        <h3>Aulas</h3>
+    </header>
+    <div class="title">
+        <h1>MODELO DE CAIXAS: PRIMEIROS PASSOS</h1>
+        <h2 class="subtitle">BOX MODEL</h2>
+    </div>
+    <a href="caixa01.html">MODELO DE CAIXAS</a>
+    <p>Depois da aula teórica, hoje é dia de colocar a mão na massa.</p>
+
+    <div class="box-one">
+        <h2>CRIANDO O PRIMEIRO EXERCÍCIO</h2>
+        <p>Antes de tudo vaos criar um pequeno exercício. Inicialmente, crie o exercício "ex021" e o nosso exemlo de Modelo de Caixas.</p>
+        <p>A prmeira coisa que faremos é criar um <code>h1</code> que é uma caixa box-level. Nesse sítulo escreva Exemplo de caixa box-level". Abaixo, crie um parágrafo e tenha certeza que a estrutura tenha a seguine forma:</p>
+        <code>&lt;h1&gt;Exemplo de caixa box-level&lt;/h1&gt;</code><br>
+        <code>&lt;p&gt;Parágrafo também é um exemplo de caixa box-level, mas os &lt;a href=""&gt;links são exemplos de caixa inline-level&lt;/a&gt;. Vamos ver como isso funciona.&lt;/p&gt;</code>
+        
+        <h2>USANDO O DEVTOOLS DO CHROME</h2>
+        <p>Para entender na prática, pelo google chrome, selecione a opção inspecionar. Acessando a aba elementos podemos verificar o modelo de caixas.</p>
+        <p>Basicamente, quando clicamosem um elemento podemos vesificar as configurações de CSS criadas automaticamente pelo useragente, vulgo, seu navegador. Todo navegador possui uma configuração base. Em nosso exemplo, nosso h1 e nosso parágrafo são do tipo <code>display: block;</code>, indicando ser um elemento do tipo box-level. Essa característica pode ter seu valor alterado, inclusive para flex, uma tecnologia nova da CSS. Se selecionarmos o nosso link, não será exibido nada, mas é um <code>inline-box</code>.</p>
+    </div>
+
+    <div class="dark-box">
+        <h2>IDENTIFICANDO CAIXAS BOX-LEVEL</h2>
+        <h2>IDENTIFICANDO CAIXAS INLINE-LEVEL</h2>
+        <h2>IDENTIFICANDO PADDING E MARGIN</h2>
+        <p>Posicionando o mouse em cima de um conteúdo veremos apenas sua caixa. Posicionando o muose em cima do elemento podemos ver também a margem do elemento. Se o elemento tivesse borda ou "padding" seria também possível visualizá-los.</p>
+    </div>
+
+    <h2>CRIANDO UM ESTILO PERSONALIZADO</h2>
+    <p>Você está costumado a configurar o CSS de se exemplo antes mesmo do início, certo?Hoje ainda não fiemos nada de CSS em nosso exemplo, mas vamos resolver isso rapidamente.</p>
+    <p>Antes de qualquer estilo mais complexo vamos configurar nossa página. Adicione um background color em nosso h1 para verificar o quanto de nossa tela será ocupada pela caixa. Vamos alterar altura e largura de nosso h1 para gerar umquadrado de 300px.</p>
+    <p>A coisa mais interessante do DevTools é quevocê pode configurar vários desses elementos direto no navegador, claro que não salvará essas alterações, mas nos permitirão testar tais alterações. Brinque um pouco com com isso. É também possível desligar algumas propriedades das CSS.</p>
+
+    <h2>CONFIGURANDO LARGURA E ALTURA DA CAIXA</h2>
+    <h2>PERSONLIZANDO PROPRIEDADES COM O DEVTOOLS</h2>
+    <div class="dark-box">
+        <h2 class="right-title">USANDO BORDAS EM CAIXAS VIA CSS</h2>
+        <p>Crie um border (width, style e color) com os seguintes valores: 10px, solid e darkslategray. Quando atualizarmos poderemos encontrála em nosso DevTools</p>
+        <h2 class="right-title">MAIS CONFIGURAÇÕES PARA O CORPO</h2>
+        <p>Podemos também criar uma borda em todos os elementos utilizados. Configure a âncora com uma bordar de meso tamanho e cor vermelha.</p>
+        <h2 class="right-title">PERSONALIZANDO A BORDA EM OUTROS FORMATOS</h2>
+        <p>Podemos alterar nossa borda para que ela possa ter vários estilos diferentes, alterando o border-style para dashed, dotted, double, groove</p>
+    </div>
+
+    <h2>CONFIGURANDO O PADDING DE UMA CAIXA</h2>
+    <p>Geralmente dividada em quatro partes (top, botton, right e left). Adicionando em nosso h1 poderemos encontrar agora um espaço maior do conteúdo para a borda</p>
+    <p>Existem uma ordem para indicar o padding. A ordem correta é no sentido horário</p>
+</body>
+</html>

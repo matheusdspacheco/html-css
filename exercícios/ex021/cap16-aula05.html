@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+</head>
+<body>
+    <h1>SOMBRA NAS CAIXAS</h1>
+    <p>Com a base do modelo de caixas, podemos comçar a estudar as sombras que podemos aplicar nelas.<br>A base desse conteúdo é importante pois utilizaremos o mesmo exercício da aula anterior.</p>
+
+    <h2>EXERCÍCIO DA AULA ANTERIOR</h2>
+    <p>Na aula anterior montamos um pequeno modelo de site. Até o momento parece que apenas colocamos pedaços de papel em cima de uma mesa. Mesmo que seja fino, ainda existirá uma sombra.</p>
+
+    <h2>CUIDADO COM AS SOMBRAS</h2>
+    <p>Não é necessário exagerar. O cérebro irá perceber a sombra.</p>
+
+    <h2>RESOLVENDO O PROBLEMA COM O RODAPÉ</h2>
+    <p>Antes de aplicarmos as sombras, vamos resolver um pequeno problema.<br>Nosso rodapé foi configurado com um padding de 1px, entretnto você percebeu que o padding aplicado não corresponde a 1px "nem aqui e nem na China". Quando colocamos 0px o padding simplesmente some. Isso ocorre nesse caso pois quando colocamos o padding, como o texto do rodapé está em um parágrafo, ele está considerando 1px após a margem do parágrafo que está com 16px. Para resolver esse problema, configure o parágrafo "filho" do footer com margem de 0px.</p>
+
+    <h2>ENTENDENDO A SHORTHAND BOX-SHADOW</h2>
+    <p>As sombras são por padrão configuradas com uma shorthand. É curioso pois, ao contrário das configurações vistas anteriormente a shorthand para sombras não é uma simplificação da configuração.</p>
+    <p>Adicionaremos uma sombra a nosso menu, ou seja, na caixa &lt;nav&gt;.</p>
+    <p>Dentro do box-shadow, devemos informar alguns parâmetros. Os principais são, respectivamente, deslocamento horizontal, delocamento vertical, espalhamento (blur) e cor da sombra. Feito isso, poderemos ver uma pequena sombra em nosso nav.</p>
+
+    <h2>USANDO O DEVTOOLS PARA AJUDAR COM AS SOMBRAS</h2>
+    <p>Selecionando o box-shadow podemos variar o valor dos parâmetros para melhor entendermos.</p>
+
+    <h2>ASSISTENTE SÍMPLES PARA A CRIAÇÃO DAS SOMBRAS</h2>
+    <p>Acerca do espalhamento, quanto maior o número, mais presente na tela ela estará.</p>
+    <p>Podemos também criar nossa própria sombra. Para isso,a primeira coisa será remover o box-shadow. Agora, no DevTools, clique em adicionar box-shadow, você poderá configurar de maneira bem dinâmica. Imediatamente após o blur é posssível configurar mais um parâmetro chamado visualização. Por fim, basa adicionar a configuração em seu CSS. É também possível adicionar uma sombra interna no elemento, bastandoapenas adicionar o parâmetro "inset" antes do deslocamento horizontal.</p>
+
+    <h2>CONFIGURANDO A COR DE UMA SOMBRA</h2>
+    <p>Mudar cor de sombra é ridiculo pois não existe sombra colorida. O correto é sempre criar uma sombra prea e reduzir a opacidade da cor.</p>
+    <p>Vale lembrar uma coisa: nao se deve adicionar sombra de caixa em texto. para criar ma sobra do texto você deve utilizar o text-shadow, mas isso é assunto para um futuro breve.</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@charset "UTF-8"
+
+*{}
+
+body{
+    background-color: rgb(31, 31, 31);
+    font-family: arial;
+    font-size: 15px;
+}
+
+h1{
+    color: black;
+    background-color: chartreuse;
+}
+
+h2{
+    color: antiquewhite;
+}
+
+p{
+    color: antiquewhite;
+    text-align: justify;
+}

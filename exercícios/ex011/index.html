@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <!--As linhas aqui digitadas dverão ser transferidas para o execício "ex011" no notebook do Matheus-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p><!--Nem todos os formatos de audio são compatíveis com todos os navegadores. Alguns navegadores não são nem mesmo compatíveis com MP3. Os formatos mais comuns são MP3, WAV e OGG-->
+
+    <p>A primeira maneira é muito <abbr title="&lt;audio src=&gt;&lt;/audio&gt;">símples</abbr>:</p>
+    <audio src="midia/ice-and-Fire-king-canyon.mp3" controls ></audio> <!--Para tocar automaticamente adicione o parâmetro autoplay-->
+    <p>Para que apareça o player é necessário adicionar o parâmetro <em>controls</em>. <br>Essa maneira é um pouco limitada pois. Em alguns navegadores nem mesmo irá funcionar o <em>autoplay</em>.</p>
+    
+    <p>Uma forma de não termos tanta limitação é adicionando os <abbr title="&lt;source src= type=&gt;">sources</abbr> dentro do par de tags <abbr title="&lt;audio&gt;&lt;/audio&gt;"><em>audio</em></abbr> sem os parâmetros do exemplo anterior.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>.</p>
+    </audio><!--Podemos adicionar o parâmetro loop para manter o audio sempre tocando o fundo (quando em autoplay). Não recomendo o uso.-->
+    <p>Podemos adicionar o parâmetro <em>preload</em> que contém três valores possíveis:</p>
+    <ul>
+        <li>
+            <dl>
+                <dt>auto</dt>
+                <dd>Valor padrão, o site só irá carregar completamente após o arregamento completo do áudio. Isso é perigoso pois, dependendo do tamanho do áudio, o site irá demorar muito para carregar.</dd>
+            </dl>
+        </li>
+
+        <li>
+            <dl>
+                <dt>metadata</dt>
+                <dd>Só irá carregar informações de nome do arquivo, data, duração e alguns outros dados</dd>
+            </dl>
+        </li>
+
+        <li>
+            <dl>
+                <dt>none</dt>
+                <dd>Só irá carregar o áudio quando o usuário clicar em play</dd>
+            </dl>
+        </li>
+    </ul>
+
+    <p>Como dito anteriormente, a ordem das tags é muito importante. O navegador tentará executar cada tag na sequência até que encontre uma compatibilidade entre formato de arquivo e navegador. No nosso caso adicionamos um parágrafo com um texto de erro e um link para download.</p>
+    <p>Um bizu: apesar da melhor qualidade, jamais use WAV como arquivo para exibição durante uma navegação pois é extremamente pesado.</p>
+
+</body>
+</html>
